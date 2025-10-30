@@ -1,0 +1,237 @@
+muslim_kids_app/
+¦
++-- ?? pubspec.yaml
++-- ?? README.md
+¦
++-- ?? lib/
+¦   ¦
+¦   +-- ?? main.dart
+¦   ¦
+¦   +-- ?? core/
+¦   ¦   +-- ?? constants/
+¦   ¦   ¦   +-- ?? app_constants.dart
+¦   ¦   ¦   +-- ?? asset_constants.dart
+¦   ¦   ¦   +-- ?? text_constants.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? themes/
+¦   ¦   ¦   +-- ?? app_theme.dart
+¦   ¦   ¦   +-- ?? color_scheme.dart
+¦   ¦   ¦   +-- ?? text_theme.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? utils/
+¦   ¦       +-- ?? app_utils.dart
+¦   ¦       +-- ?? date_utils.dart
+¦   ¦       +-- ?? prayer_utils.dart
+¦   ¦
+¦   +-- ?? data/
+¦   ¦   +-- ?? models/
+¦   ¦   ¦   +-- ?? dua_model.dart
+¦   ¦   ¦   +-- ?? prayer_step_model.dart
+¦   ¦   ¦   +-- ?? tajweed_model.dart
+¦   ¦   ¦   +-- ?? game_model.dart
+¦   ¦   ¦   +-- ?? nasheed_model.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? repositories/
+¦   ¦   ¦   +-- ?? dua_repository.dart
+¦   ¦   ¦   +-- ?? prayer_repository.dart
+¦   ¦   ¦   +-- ?? tajweed_repository.dart
+¦   ¦   ¦   +-- ?? nasheed_repository.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? datasources/
+¦   ¦       +-- ?? local/
+¦   ¦       ¦   +-- ?? local_data_source.dart
+¦   ¦       ¦   +-- ?? json_loader.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? assets/
+¦   ¦           +-- ?? json/
+¦   ¦           ¦   +-- ?? wudu_steps.json
+¦   ¦           ¦   +-- ?? ghusl_steps.json
+¦   ¦           ¦   +-- ?? tayammum_steps.json
+¦   ¦           ¦   +-- ?? salah_steps.json
+¦   ¦           ¦   +-- ?? daily_duas.json
+¦   ¦           ¦   +-- ?? tajweed_rules.json
+¦   ¦           ¦   +-- ?? games_data.json
+¦   ¦           ¦
+¦   ¦           +-- ?? translations/
+¦   ¦               +-- ?? en.json
+¦   ¦               +-- ?? ur.json
+¦   ¦
+¦   +-- ?? presentation/
+¦   ¦   ¦
+¦   ¦   +-- ?? providers/
+¦   ¦   ¦   +-- ?? theme_provider.dart
+¦   ¦   ¦   +-- ?? audio_provider.dart
+¦   ¦   ¦   +-- ?? language_provider.dart
+¦   ¦   ¦   +-- ?? user_progress_provider.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? widgets/
+¦   ¦   ¦   +-- ?? common/
+¦   ¦   ¦   ¦   +-- ?? app_app_bar.dart
+¦   ¦   ¦   ¦   +-- ?? app_drawer.dart
+¦   ¦   ¦   ¦   +-- ?? step_indicator.dart
+¦   ¦   ¦   ¦   +-- ?? custom_card.dart
+¦   ¦   ¦   ¦
+¦   ¦   ¦   +-- ?? prayer/
+¦   ¦   ¦   ¦   +-- ?? prayer_step_card.dart
+¦   ¦   ¦   ¦   +-- ?? wudu_animation.dart
+¦   ¦   ¦   ¦   +-- ?? salah_time_widget.dart
+¦   ¦   ¦   ¦
+¦   ¦   ¦   +-- ?? audio/
+¦   ¦   ¦   ¦   +-- ?? audio_player_widget.dart
+¦   ¦   ¦   ¦   +-- ?? nasheed_card.dart
+¦   ¦   ¦   ¦   +-- ?? dua_audio_item.dart
+¦   ¦   ¦   ¦
+¦   ¦   ¦   +-- ?? games/
+¦   ¦   ¦       +-- ?? game_button.dart
+¦   ¦   ¦       +-- ?? quiz_widget.dart
+¦   ¦   ¦       +-- ?? puzzle_piece.dart
+¦   ¦   ¦
+¦   ¦   +-- ?? screens/
+¦   ¦       ¦
+¦   ¦       +-- ?? home_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? taharat/
+¦   ¦       ¦   +-- ?? wudu_screen.dart
+¦   ¦       ¦   +-- ?? ghusl_screen.dart
+¦   ¦       ¦   +-- ?? tayammum_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? salah/
+¦   ¦       ¦   +-- ?? salah_home_screen.dart
+¦   ¦       ¦   +-- ?? salah_learning_screen.dart
+¦   ¦       ¦   +-- ?? salah_times_screen.dart
+¦   ¦       ¦   +-- ?? qibla_compass_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? tajweed/
+¦   ¦       ¦   +-- ?? tajweed_home_screen.dart
+¦   ¦       ¦   +-- ?? tajweed_lesson_screen.dart
+¦   ¦       ¦   +-- ?? tajweed_practice_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? duas/
+¦   ¦       ¦   +-- ?? duas_home_screen.dart
+¦   ¦       ¦   +-- ?? daily_duas_screen.dart
+¦   ¦       ¦   +-- ?? dua_detail_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? nasheeds/
+¦   ¦       ¦   +-- ?? nasheeds_screen.dart
+¦   ¦       ¦   +-- ?? anasheed_player_screen.dart
+¦   ¦       ¦   +-- ?? hamd_naat_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? stories/
+¦   ¦       ¦   +-- ?? islamic_stories_screen.dart
+¦   ¦       ¦   +-- ?? story_detail_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? games/
+¦   ¦       ¦   +-- ?? games_home_screen.dart
+¦   ¦       ¦   +-- ?? prayer_mat_puzzle.dart
+¦   ¦       ¦   +-- ?? islamic_quiz_game.dart
+¦   ¦       ¦   +-- ?? memory_match_game.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? gallery/
+¦   ¦       ¦   +-- ?? islamic_gallery_screen.dart
+¦   ¦       ¦   +-- ?? image_viewer_screen.dart
+¦   ¦       ¦
+¦   ¦       +-- ?? settings/
+¦   ¦           +-- ?? settings_screen.dart
+¦   ¦           +-- ?? language_screen.dart
+¦   ¦           +-- ?? about_screen.dart
+¦   ¦
+¦   +-- ?? services/
+¦       +-- ?? audio_service.dart
+¦       +-- ?? prayer_time_service.dart
+¦       +-- ?? location_service.dart
+¦       +-- ?? qibla_service.dart
+¦       +-- ?? storage_service.dart
+¦
++-- ?? assets/
+¦   ¦
+¦   +-- ?? images/
+¦   ¦   +-- ?? icons/
+¦   ¦   ¦   +-- ?? app_icon.png
+¦   ¦   ¦   +-- ?? wudu_icon.png
+¦   ¦   ¦   +-- ?? salah_icon.png
+¦   ¦   ¦   +-- ?? tajweed_icon.png
+¦   ¦   ¦   +-- ?? dua_icon.png
+¦   ¦   ¦   +-- ?? nasheed_icon.png
+¦   ¦   ¦   +-- ?? game_icon.png
+¦   ¦   ¦   +-- ?? gallery_icon.png
+¦   ¦   ¦
+¦   ¦   +-- ?? wudu/
+¦   ¦   ¦   +-- ?? step_1.png
+¦   ¦   ¦   +-- ?? step_2.png
+¦   ¦   ¦   +-- ?? ... (???? steps)
+¦   ¦   ¦
+¦   ¦   +-- ?? salah/
+¦   ¦   ¦   +-- ?? qiyam.png
+¦   ¦   ¦   +-- ?? ruku.png
+¦   ¦   ¦   +-- ?? sajda.png
+¦   ¦   ¦   +-- ?? ... (???? positions)
+¦   ¦   ¦
+¦   ¦   +-- ?? tajweed/
+¦   ¦   ¦   +-- ?? makharij_chart.png
+¦   ¦   ¦   +-- ?? ghunna.png
+¦   ¦   ¦   +-- ?? ... (???? rules)
+¦   ¦   ¦
+¦   ¦   +-- ?? gallery/
+¦   ¦   ¦   +-- ?? kaaba.jpg
+¦   ¦   ¦   +-- ?? masjid_nabawi.jpg
+¦   ¦   ¦   +-- ?? masjid_al_aqsa.jpg
+¦   ¦   ¦   +-- ?? ... (???? ??????)
+¦   ¦   ¦
+¦   ¦   +-- ?? games/
+¦   ¦       +-- ?? puzzle_bg.png
+¦   ¦       +-- ?? quiz_bg.png
+¦   ¦       +-- ?? ... (???? assets)
+¦   ¦
+¦   +-- ?? audio/
+¦   ¦   +-- ?? nasheeds/
+¦   ¦   ¦   +-- ?? nasheed_1.mp3
+¦   ¦   ¦   +-- ?? nasheed_2.mp3
+¦   ¦   ¦   +-- ?? ... (???? ??????)
+¦   ¦   ¦
+¦   ¦   +-- ?? duas/
+¦   ¦   ¦   +-- ?? morning_dua.mp3
+¦   ¦   ¦   +-- ?? evening_dua.mp3
+¦   ¦   ¦   +-- ?? ... (???? ??????)
+¦   ¦   ¦
+¦   ¦   +-- ?? tajweed/
+¦   ¦   ¦   +-- ?? makharij_demo.mp3
+¦   ¦   ¦   +-- ?? ghunna_demo.mp3
+¦   ¦   ¦   +-- ?? ... (????? ?????)
+¦   ¦   ¦
+¦   ¦   +-- ?? quran/
+¦   ¦       +-- ?? fatiha.mp3
+¦   ¦       +-- ?? ikhlas.mp3
+¦   ¦       +-- ?? ... (????? ??????)
+¦   ¦
+¦   +-- ?? videos/
+¦   ¦   +-- ?? wudu/
+¦   ¦   ¦   +-- ?? wudu_tutorial.mp4
+¦   ¦   ¦   +-- ?? wudu_animation.mp4
+¦   ¦   ¦
+¦   ¦   +-- ?? salah/
+¦   ¦   ¦   +-- ?? fajr_salah.mp4
+¦   ¦   ¦   +-- ?? zuhr_salah.mp4
+¦   ¦   ¦   +-- ?? ... (???? ??????)
+¦   ¦   ¦
+¦   ¦   +-- ?? tajweed/
+¦   ¦   ¦   +-- ?? basic_tajweed.mp4
+¦   ¦   ¦   +-- ?? advanced_tajweed.mp4
+¦   ¦   ¦
+¦   ¦   +-- ?? stories/
+¦   ¦       +-- ?? prophet_stories.mp4
+¦   ¦       +-- ?? sahaba_stories.mp4
+¦   ¦
+¦   +-- ?? fonts/
+¦       +-- ?? noorehira.ttf
+¦       +-- ?? me_quran.ttf
+¦       +-- ?? urdu_font.ttf
+¦       +-- ?? arabic_font.ttf
+¦
++-- ?? test/
+¦   +-- ?? widget_test.dart
+¦   +-- ?? repository_test.dart
+¦   +-- ?? model_test.dart
+¦
++-- ?? web/
+    +-- ?? index.html
+    +-- ?? favicon.png
